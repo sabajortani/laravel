@@ -24,3 +24,5 @@ Route::post('/user/register', 'UserController@register')->middleware('myMiddlewa
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/bol', 'bolController@index')->name('bol');
