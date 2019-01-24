@@ -25,4 +25,13 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/bol', 'bolController@index')->name('bol');
+
+
+//Route::post('/bol', 'BolController@index')->name('bol');
+
+
+Route::get('/bol', 'BolController@index');
+Route::post('/bol/show', 'BolController@show');
+
+
+Route::get('/good', 'goodController@index')->name('good');
