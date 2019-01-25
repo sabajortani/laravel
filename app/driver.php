@@ -4,7 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class driver extends Model
+class Driver extends Model
 {
-    //
+    protected $table = 'driver';
+    protected $guarded = ['id'];
+    public $timestamps = false;
+
+
 }

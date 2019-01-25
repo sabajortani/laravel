@@ -85,13 +85,17 @@
                 </div>
 
                 <div class="links">
-                    <a href="/bol">ایجاد بارنامه</a>
+                    <a href="/bol">ثبت بارنامه</a>
                     <a href="/good">تعریف کالا</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="/customer">ایجاد مشتری جدید</a>
+                    <a href="/usagefactor">ثبت فاکتور خرید</a>
+                    <a href="/tell">ثبت شماره تلفن</a>
+                    <a href="/driver">ثبت راننده</a>
+                    <a href="/sender">ثبت فرستنده</a>
+                    <a href="/reseaver">ثبت گیرنده</a>
+                    <a href="/store">ثبت انبار</a>
+                    <a href="/document">ثبت سند</a>
+                    <a href="/employee">ثبت کارمند جدید</a>
                 </div>
             </div>
         </div>

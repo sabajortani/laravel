@@ -2,47 +2,47 @@
 
 @section('title')
 
-    Add Driver
+   add receiver
 @endsection
 
 @section('body')
     <section class="container">
 
-        <h1 style="text-align:center; font-style: italic;">ثبت راننده</h1>
+        <h1 style="text-align:center; font-style: italic;">ایجاد گیرنده بار</h1>
 
 
 
 
         <div class="col-6 m-auto">
-            <form action="/driver" method="post">
+            <form action="/receaver" method="post">
                 @csrf
 
 
                 <div class="form-group">
-                    <lable>آدرس راننده</lable>
-                    <input class="form-control" type="text" name="address_of_driver">
+                    <lable>آدرس گیرنده</lable>
+                    <input class="form-control" type="text" name="address_of_receaver">
                 </div>
 
 
                 <br/>
 
                 <div class="form-group">
-                    <lable>نام راننده</lable>
-                    <input class="form-control" type="text" name="name_of_driver">
+                    <lable>نام گیرنده</lable>
+                    <input class="form-control" type="text" name="name_of_receaver">
                 </div>
 
                 <br/>
 
                 <div class="form-group">
-                    <lable>شماره ملی راننده</lable>
-                    <input class="form-control" type="text" name="id_of_bol">
+                    <lable>شماره ملی گیرنده</lable>
+                    <input class="form-control" type="text" name="id_of_receaver">
                 </div>
 
                 <br/>
 
                 <div class="form-group">
-                    <lable>پلاک ماشین</lable>
-                    <input class="form-control" type="text" name="plaques_of_car">
+                    <lable>شماره بارنامه</lable>
+                    <input class="form-control" type="text" name="no_of_bol">
                 </div>
 
                 <br/>

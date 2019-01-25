@@ -4,7 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class document extends Model
+class Document extends Model
 {
-    //
+    protected $table = 'document';
+    protected $guarded = ['id'];
+    public $timestamps = false;
+
+
 }

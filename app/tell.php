@@ -4,7 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class tell extends Model
+class Tell extends Model
 {
-    //
+    protected $table = 'tell';
+    protected $guarded = ['id'];
+    public $timestamps = false;
+
+
 }

@@ -4,7 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class reseaver extends Model
+class Reseaver extends Model
 {
-    //
+    protected $table = 'reseaver';
+    protected $guarded = ['id'];
+    public $timestamps = false;
+
+
 }
