@@ -31,7 +31,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::get('/bol', 'BolController@index');
+Route::post('/bol', 'BolController@creatBol')->name('bol.insert');
 Route::post('/bol/show', 'BolController@show');
 
 
 Route::get('/good', 'goodController@index')->name('good');
+
+Route::get('/customer', 'customerController@index');
+Route::post('/customer', 'customerController@creatBol')->name('usagefactor.insert');
+
+Route::get('/usagefactor', 'UsagefactorController@index');
+Route::post('/usagefactor', 'UsagefactorController@creatBol')->name('usagefactor.insert');

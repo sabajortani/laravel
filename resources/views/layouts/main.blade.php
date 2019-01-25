@@ -9,7 +9,7 @@
 
     <title>@yield('title')</title>
 </head>
-<body>
+<body style="background-color: #bee5eb;">
     @yield('body')
 </body>
 </html>

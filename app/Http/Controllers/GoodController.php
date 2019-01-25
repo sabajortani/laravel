@@ -12,7 +12,7 @@ class GoodController extends Controller
 
     public function __construct(good $good)
     {
-        $this->good = $good;
+        $this -> good = $good;
     }
 
     public function index()

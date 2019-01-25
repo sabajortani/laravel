@@ -1,38 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>good</title>
-</head>
-<body>
+@extends('layouts.main')
+
+@section('title')
+
+    define good
+@endsection
+
+@section('body')
+    <section class="container">
+
+        <h1 style="text-align:center; font-style: italic;">ایجاد کالا</h1>
 
 
-<h1>صفحه ثبت اطلاعات</h1>
+
+
+        <div class="col-6 m-auto">
+            <form action="/good" method="post">
+                @csrf
+
+
+                <div class="form-group ">
+                    <lable>نام مشتری</lable>
+                    <input class="form-control" type="text" name="owner_name">
+                </div>
+
+
+                <br/>
+
+                <div class="form-group">
+                    <lable>نام کالا</lable>
+                    <input class="form-control" type="text" name="name_of_good">
+                </div>
+
+                <br/>
+
+                <div class="form-group">
+                    <lable>کد کالا</lable>
+                    <input class="form-control" type="text" name="good_code_auto">
+                </div>
+
+                <br/>
+
+                <div class="form-group">
+                    <lable>شماره کاربری مسئول ثبت</lable>
+                    <input class="form-control" type="text" name="id_no_of_employee">
+                </div>
+
+                <br/>
+
+                <div class="form-group">
+                    <lable>شماره نوع واحد کالا</lable>
+                    <input class="form-control" type="text" name="no_of_unit_type">
+                </div>
+
+                <br/>
+
+                <div class="form-group">
+                    <lable>شرایط نگهداری</lable>
+                    <input class="form-control" type="text" name="strong_condition">
+                </div>
+
+                <br/>
+
+                <div class="form-group">
+                    <lable>تاریخ انقضا</lable>
+                    <input class="form-control" type="text" name="expire_date">
+                </div>
+
+                <br/>
+
+                <div class="form-group">
+                    <lable>مقدار کالا</lable>
+                    <input class="form-control" type="text" name="quantity">
+                </div>
+
+                <br/>
+
+                <div class="form-group">
+                    <lable>نوع بسته بندی</lable>
+                    <input class="form-control" type="text" name="no_packing_type">
+                </div>
+
+                <br/>
+
+                <div class="form-group">
+                    <lable>شماره بارنامه</lable>
+                    <input class="form-control" type="text" name="no_of_bol">
+                </div>
+
+                <br/>
+
+                <div class="form-group">
+                    <lable>تاریخ ورود کالا</lable>
+                    <input class="form-control" type="text" name="entry_date">
+                </div>
+
+                <br/>
 
 
 
-/**
- * Created by PhpStorm.
- * User: ACER
- * Date: 01/23/2019
- * Time: 07:30 PM
- */
-<form action="/action_page.php">
-  <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email">
-  </div>
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd">
-  </div>
-  <div class="form-group form-check">
-    <label class="form-check-label">
-      <input class="form-check-input" type="checkbox"> Remember me
-</label>
-  </div>
-  <button type="submit" class="btn btn-outline-primary">Submit</button>
-</form>
 
-</body>
-</html>
+                <button class="form-control btn btn-outline-info" type="submit">ذخیره اطلاعات</button>
+            </form>
+        </div>
+    </section>
+@endsection

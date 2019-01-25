@@ -4,7 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class customer extends Model
+class Customer extends Model
 {
-    //
+    protected $table = 'customer';
+    protected $guarded = ['id'];
+    public $timestamps = false;
+
+
 }
