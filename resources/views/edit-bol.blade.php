@@ -10,31 +10,23 @@
 
         <h1 style="text-align:center; font-style: italic;">ویرایش بارنامه</h1>
 
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
+
 
 
         <div class="col-6 m-auto">
-            <form action="{{route('bol.insert')}}" method="post">
+            <form action="{{route('bol.update', ['id'=> $bol->no_of_bol])}}" method="post">
                 @csrf
 
 
-                {{--<div class="form-group">--}}
-                    {{--<lable>شماره بارنامه</lable>--}}
-                    {{--<input class="form-control" type="text" name="no_of_bol">--}}
-                {{--</div>--}}
+                          <div class="form-group">
+                               <lable>شماره بارنامه</lable>
+                               <input class="form-control" type="text" name="no_of_bol">
+                                </div>
 
 
                 <div class="form-group">
                     <lable>تاریخ</lable>
-                    <input class="form-control" type="date" name="date" value="{{old('date')}}">
+                    <input class="form-control" type="date" name="date" value="{{$bol->date}}">
                 </div>
                 </odiv>
                 <br/>
@@ -65,35 +57,35 @@
 
                 <div class="form-group">
                     <lable>مبدا</lable>
-                    <input class="form-control" type="text" name="source" value="{{old('source')}}">
+                    <input class="form-control" type="text" name="source" value="{{$bol->source}}">
                 </div>
 
                 <br/>
 
                 <div class="form-group">
                     <lable>مقصد</lable>
-                    <input class="form-control" type="text" name="destination" value="{{old('destination')}}">
+                    <input class="form-control" type="text" name="destination" value="{{$bol->destination}}">
                 </div>
 
                 <br/>
 
                 <div class="form-group">
                     <lable>هزینه حمل بار</lable>
-                    <input class="form-control" type="text" name="fee_of_carry" value="{{old('fee_of_carry')}}">
+                    <input class="form-control" type="text" name="fee_of_carry" value="{{$bol->fee_of_carry}}">
                 </div>
 
                 <br/>
 
                 <div class="form-group">
                     <lable>نام کالا</lable>
-                    <input class="form-control" type="text" name="name_of_good" value="{{old('name_of_good')}}">
+                    <input class="form-control" type="text" name="name_of_good" value="{{$bol->name_of_good}}">
                 </div>
 
                 <br/>
 
                 <div class="form-group">
                     <lable>مقدار کالا</lable>
-                    <input class="form-control" type="text" name="quantity" value="{{old('quantity')}}">
+                    <input class="form-control" type="text" name="quantity" value="{{$bol->quantity}}">
                 </div>
 
                 <br/>
@@ -121,42 +113,42 @@
 
                 <div class="form-group">
                     <lable>کد کالا</lable>
-                    <input class="form-control" type="text" name="good_code" value="{{old('good_code')}}">
+                    <input class="form-control" type="text" name="good_code" value="{{$bol->good_code}}">
                 </div>
 
                 <br/>
 
                 <div class="form-group">
                     <lable>شماره کارمندی مسئول ثبت</lable>
-                    <input class="form-control" type="text" name="id_no_employee" value="{{old('id_no_employee')}}">
+                    <input class="form-control" type="text" name="id_no_employee" value="{{$bol->id_no_employee}}">
                 </div>
 
                 <br/>
 
                 <div class="form-group">
                     <lable>شماره ملی گیرنده</lable>
-                    <input class="form-control" type="text" name="id_no_reseaver" value="{{old('id_no_reseaver')}}">
+                    <input class="form-control" type="text" name="id_no_reseaver" value="{{$bol->id_no_reseaver}}">
                 </div>
 
                 <br/>
 
                 <div class="form-group">
                     <lable>شماره ملی فرستنده</lable>
-                    <input class="form-control" type="text" name="id_no_sender" value="{{old('id_no_sender')}}">
+                    <input class="form-control" type="text" name="id_no_sender" value="{{$bol->id_no_sender}}">
                 </div>
 
                 <br/>
 
                 <div class="form-group">
                     <lable>شماره ملی راننده</lable>
-                    <input class="form-control" type="text" name="id_no_driver" value="{{old('id_no_driver')}}">
+                    <input class="form-control" type="text" name="id_no_driver" value="{{$bol->id_no_driver}}">
                 </div>
 
                 <br/>
 
                 <div class="form-group">
                     <lable>شماره ملی مشتری</lable>
-                    <input class="form-control" type="text" name="id_no_customer" value="{{old('id_no_customer')}}">
+                    <input class="form-control" type="text" name="id_no_customer" value="{{$bol->id_no_customer}}">
                 </div>
 
                 <br/>

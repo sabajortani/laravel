@@ -24,12 +24,12 @@ class CustomerController extends Controller
 
     public function customer(Request $request)
     {
-        $this->customer->UserName= $request->UserName;
-        $this->customer->IDNo= $request->IDNo;
-        $this->customer->firtName= $request->firtName;
-        $this->customer->lastName= $request->lastName;
-        $this->customer->Email= $request->Email;
-        $this->customer->DateOfContract= $request->DateOfContract;
+        $this->customer->user_name= $request->user_name;
+        $this->customer->id_no= $request->id_no;
+        $this->customer->first_name= $request->first_name;
+        $this->customer->last_name= $request->last_name;
+        $this->customer->email= $request->email;
+        $this->customer->date_of_contract_end= $request->date_of_contract_end;
 
 
 

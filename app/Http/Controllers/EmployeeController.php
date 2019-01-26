@@ -24,12 +24,12 @@ class EmployeeController extends Controller
 
     public function employee(Request $request)
     {
-        $this->employee->UserName= $request->UserName;
-        $this->employee->IDNo= $request->IDNo;
-        $this->employee->firtName= $request->firtName;
-        $this->employee->lastName= $request->lastName;
-        $this->employee->Email= $request->Email;
-        $this->employee->DateOfContract= $request->DateOfContract;
+        $this->employee->user_name= $request->user_name;
+        $this->employee->no_of_position_type= $request->no_of_position_type;
+        $this->employee->id_number= $request->id_number;
+        $this->employee->first_name= $request->first_name;
+        $this->employee->first_name= $request->first_name;
+        $this->employee->email= $request->email;
 
 
 

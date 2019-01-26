@@ -24,13 +24,15 @@ class DocumentController extends Controller
 
     public function document(Request $request)
     {
-        $this->document->UserName= $request->UserName;
-        $this->document->IDNo= $request->IDNo;
-        $this->document->firtName= $request->firtName;
-        $this->document->lastName= $request->lastName;
-        $this->document->Email= $request->Email;
-        $this->document->DateOfContract= $request->DateOfContract;
-
+        $this->document->date= $request->date;
+        $this->document->doc_no_auto= $request->doc_no_auto;
+        $this->document->no_of_bol= $request->no_of_bol;
+        $this->document->code_of_store= $request->code_of_store;
+        $this->document->employee_id= $request->employee_id;
+        $this->document->no_of_doc_type= $request->no_of_doc_type;
+        $this->document->no_of_unit_type= $request->no_of_unit_type;
+        $this->document->quantity= $request->quantity;
+        $this->document->owner_name= $request->owner_name;
 
 
         $result = $this->document->save();

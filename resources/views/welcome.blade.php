@@ -96,6 +96,12 @@
                     <a href="/store">ثبت انبار</a>
                     <a href="/document">ثبت سند</a>
                     <a href="/employee">ثبت کارمند جدید</a>
+                    <br/>
+                    <br/>
+                    <a href="{{ route('bol.show.all') }}">مشاهده و ویرایش همه ی بارنامه ها</a>
+                    <a href="/employee">ثبت کارمند جدید</a>
+                    <a href="/employee">ثبت کارمند جدید</a>
+
                 </div>
             </div>
         </div>

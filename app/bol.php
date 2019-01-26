@@ -10,5 +10,5 @@ class Bol extends Model
     protected $guarded = ['id'];
     public $timestamps = false;
 
-
+//$conn = new mysqli($servername, $username, $password, $laravel_db);
 }

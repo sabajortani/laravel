@@ -24,12 +24,12 @@ class DriverController extends Controller
 
     public function driver(Request $request)
     {
-        $this->driver->UserName= $request->UserName;
-        $this->driver->IDNo= $request->IDNo;
-        $this->driver->firtName= $request->firtName;
-        $this->driver->lastName= $request->lastName;
-        $this->driver->Email= $request->Email;
-        $this->driver->DateOfContract= $request->DateOfContract;
+        $this->driver->address_of_driver= $request->address_of_driver;
+        $this->driver->name_of_driver= $request->name_of_driver;
+        $this->driver->firtid_of_driver= $request->id_of_driver;
+        $this->driver->lastno_of_bol= $request->no_of_bol;
+        $this->driver->plaque_of_car= $request->plaque_of_car;
+
 
 
 
