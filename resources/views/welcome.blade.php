@@ -87,7 +87,7 @@
                 <div class="links">
                     <a href="/bol">ثبت بارنامه</a>
                     <a href="/good">تعریف کالا</a>
-                    <a href="/customer">ایجاد مشتری جدید</a>
+                   <!-- <a href="/customer">ایجاد مشتری جدید</a>-->
                     <a href="/usagefactor">ثبت فاکتور خرید</a>
                     <a href="/tell">ثبت شماره تلفن</a>
                     <a href="/driver">ثبت راننده</a>
@@ -99,8 +99,7 @@
                     <br/>
                     <br/>
                     <a href="{{ route('bol.show.all') }}">مشاهده و ویرایش همه ی بارنامه ها</a>
-                    <a href="/employee">ثبت کارمند جدید</a>
-                    <a href="/employee">ثبت کارمند جدید</a>
+
 
                 </div>
             </div>

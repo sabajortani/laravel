@@ -49,10 +49,13 @@ Route::get('/good/show-all-good', 'GoodController@showAll')->name('good.show.all
 
 
 
+//Route::get('/customer', 'CustomerController@index')->name('customer');
 
-Route::get('/customer', 'customerController@index');
-Route::post('/customer', 'customerController@creatCustomer')->name('usagefactor.insert');
-
+Route::post('/customer', 'CustomerController@insert')->name('customers.insert');
+Route::get('/customer/edit/{id}', 'CustomerController@edit')->name('customers_edit');
+Route::post('/customer/update/{id}', 'CustomerController@update')->name('customers.update');
+Route::get('/customer/delete/{id}', 'CustomerController@delete')->name('customers_delete');
+Route::get('/customer/show-all', 'CustomerController@showAll')->name('customers.show.all');
 
 
 

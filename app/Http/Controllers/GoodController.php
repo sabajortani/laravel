@@ -39,7 +39,7 @@ class GoodController extends Controller
 
         return back()->withMessage('success');
 
-
+/*
 
 
         function showAll()
@@ -75,7 +75,6 @@ class GoodController extends Controller
             '
         ]);
 
-
         return back()->withMessage("success");
          }
 
@@ -85,7 +84,7 @@ class GoodController extends Controller
         return back()->withMessage("success");
 
     }
-
+*/
 
 
         return redirect("/good");
